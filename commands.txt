@@ -24,6 +24,3 @@ git checkout master
 git pull
 git pull origin new-feature
 git push
-
-
-
