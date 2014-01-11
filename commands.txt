@@ -27,7 +27,8 @@ git commit
 7) when feature is ready, update your master and new-feature branch from origin, and merge
 git checkout master
 git pull
-git pull origin new-feature
+git fetch origin new-feature
+git merge --no-ff new-feature
   7.1) fix conflicts if any arise
   git add .
   git rebase --continue
