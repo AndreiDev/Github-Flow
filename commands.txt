@@ -1,3 +1,5 @@
+Github flow - version1.0:
+
 git checkout -b new-feature master
 
 [work on new-feature branch]
@@ -8,6 +10,9 @@ git push -u origin new-feature
 [start collaboratoin with others]
 
 [some more work on new-feature]
+git fetch origin new-feature
+git merge origin/new-feature
+[fix merge conflicts if arise]
 git add .
 git commit
 git push
@@ -15,6 +20,9 @@ git push
 [file "pull request" into master in GUI for code review by collaborators]
 
 [and some more work as a result of the code review]
+git fetch origin new-feature
+git merge origin/new-feature
+[fix merge conflicts if arise]
 git add .
 git commit
 git push
