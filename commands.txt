@@ -4,7 +4,6 @@ Github flow - version1.1:
 git checkout -b new-feature master
 
 2) work and commit locally
-[work on new-feature branch]
 git add .
 git commit
 
@@ -14,7 +13,6 @@ git push -u origin new-feature
 4) continue work on the feature branch
 git add .
 git commit
-  
   4.1) push the feature branch to the central repo after checking for updates from origin
   git pull origin new-feature
     4.2) fix conflicts if any arise
@@ -30,7 +28,7 @@ git commit
 git checkout master
 git pull
 git pull origin new-feature
-  7.1 fix conflicts if any arise
+  7.1) fix conflicts if any arise
   git add .
   git rebase --continue
 git push
