@@ -1,4 +1,4 @@
-Github flow - version1.1:
+Github flow - version1.2:
 
 1) create feature branch
 git checkout -b new-feature master
@@ -13,12 +13,15 @@ git push -u origin new-feature
 4) continue work on the feature branch
 git add .
 git commit
-  4.1) push the feature branch to the central repo after checking for updates from origin
-  git fetch origin
-  git merge origin/new-feature
+  4.1) check for updates from origin, and push the feature branch to remote repo
+  git pull origin new-feature
     4.2) fix conflicts if any arise
       git add .
-      git rebase --continue
+      git commit
+  git pull origin master
+    4.3) fast-forward the master if needed
+	git checkout master
+	git pull
   git push
 
 5) issue a "pull request" into master via GUI for code review
@@ -32,7 +35,7 @@ git fetch origin
 git merge --no-ff new-feature
   7.1) fix conflicts if any arise
   git add .
-  git rebase --continue
+  git commit
 git push
 
 /// written by Andrei Averkin 2014
