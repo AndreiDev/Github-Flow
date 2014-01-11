@@ -14,7 +14,8 @@ git push -u origin new-feature
 git add .
 git commit
   4.1) push the feature branch to the central repo after checking for updates from origin
-  git pull origin new-feature
+  git fetch origin
+  git merge origin/new-feature
     4.2) fix conflicts if any arise
       git add .
       git rebase --continue
@@ -27,7 +28,7 @@ git commit
 7) when feature is ready, update your master and new-feature branch from origin, and merge
 git checkout master
 git pull
-git fetch origin new-feature
+git fetch origin
 git merge --no-ff new-feature
   7.1) fix conflicts if any arise
   git add .
