@@ -1,5 +1,5 @@
 Github flow - version1.0:
-abc
+xyz
 git checkout -b new-feature master
 
 [work on new-feature branch]
