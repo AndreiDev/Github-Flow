@@ -1,36 +1,38 @@
-Github flow - version1.0:
+Github flow - version1.1:
 
+1) create feature branch
 git checkout -b new-feature master
 
+2) work and commit locally
 [work on new-feature branch]
 git add .
 git commit
 
+3) push the feature branch to the central repo for collaboration
 git push -u origin new-feature
-[start collaboratoin with others]
 
-[some more work on new-feature]
-git fetch origin new-feature
-git merge origin/new-feature
-[fix merge conflicts if arise]
+4) continue work on the feature branch
 git add .
 git commit
-git push
+  
+  4.1) push the feature branch to the central repo after checking for updates from origin
+  git pull origin new-feature
+    4.2) fix conflicts if any arise
+      git add .
+      git rebase --continue
+  git push
 
-[file "pull request" into master in GUI for code review by collaborators]
+5) issue a "pull request" into master via GUI for code review
 
-[and some more work as a result of the code review]
-git fetch origin new-feature
-git merge origin/new-feature
-[fix merge conflicts if arise]
-git add .
-git commit
-git push
+6) push new commits to the central repo using STEP 4
 
-[after new-feature was cleared by collaborators]
+7) when feature is ready, update your master and new-feature branch from origin, and merge
 git checkout master
 git pull
 git pull origin new-feature
+  7.1 fix conflicts if any arise
+  git add .
+  git rebase --continue
 git push
 
 /// written by Andrei Averkin 2014
