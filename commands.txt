@@ -14,7 +14,7 @@ git commit
 git push
 
 [file "pull request" into master in GUI for code review by collaborators]
-[do some more changes as a result of the code review]
+[do some changes as a result of the code review]
 
 git add .
 git commit
