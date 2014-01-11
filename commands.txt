@@ -3,8 +3,8 @@ git checkout -b new-feature master
 [work on new-feature branch]
 git add .
 git commit
-
 git push -u origin new-feature
+
 [start collaboratoin with others]
 
 [some more work on new-feature]
