@@ -1,5 +1,0 @@
-resolved edit
-another line
-third line
-forth line
-last line
