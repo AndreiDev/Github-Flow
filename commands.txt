@@ -25,5 +25,4 @@ git pull
 git pull origin new-feature
 git push
 
-
-
+/// written by Andrei Averkin 2014
