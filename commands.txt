@@ -1,0 +1,29 @@
+git checkout -b new-feature master
+
+[work on new-feature branch]
+git add .
+git commit
+
+git push -u origin new-feature
+[start collaboratoin with others]
+
+[some more work on new-feature]
+git add .
+git commit
+git push
+
+[file "pull request" into master in GUI for code review by collaborators]
+
+[and some more work as a result of the code review]
+git add .
+git commit
+git push
+
+[after new-feature was cleared by collaborators]
+git checkout master
+git pull
+git pull origin new-feature
+git push
+
+
+
