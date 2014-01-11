@@ -27,4 +27,4 @@ git push
 
 /// written by Andrei Averkin 2014
 
-local edit
+solved conflict edit
